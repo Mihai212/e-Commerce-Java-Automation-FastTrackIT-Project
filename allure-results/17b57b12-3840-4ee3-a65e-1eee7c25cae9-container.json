@@ -1,0 +1,1 @@
+{"uuid":"17b57b12-3840-4ee3-a65e-1eee7c25cae9","name":"RegisterAccountTests.setUp","children":["2e456826-9726-403d-873d-1b75c5382291"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1701895343985,"stop":1701895350724}],"afters":[],"start":1701895343981,"stop":1701895350726}
