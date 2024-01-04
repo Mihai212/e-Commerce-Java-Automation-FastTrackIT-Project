@@ -1,3 +1,5 @@
+package TestCases;
+
 import Pages.AddOnsFeaturedPage;
 import Pages.BasePage;
 import Pages.BlogArticlePage;

@@ -1,3 +1,5 @@
+package TestCases;
+
 import Pages.BasePage;
 import Pages.HomePage;
 import jdk.jfr.Description;
@@ -83,8 +85,8 @@ public class HomeTests extends BasePage {
 
         homePage.moveCursorArrowToMyAccountButton();
         homePage.clickOnMyAccountLoginButton();
-        homePage.typeInEmailAddressRegisterCustomerField("1mihai@test.com");
-        homePage.typeInPasswordRegisterCustomerField("12345");
+        homePage.typeInEmailAddressRegisterCustomerField("amira.nicolas@hotmail.com");
+        homePage.typeInPasswordRegisterCustomerField("1234");
         homePage.clickOnLoginRegisterCustomerButton();
 
         homePage.clickOnModifyYouWishListButton();
@@ -145,8 +147,8 @@ public class HomeTests extends BasePage {
         homePage.moveCursorArrowToMyAccountButton();
         homePage.clickOnMyAccountLoginButton();
 
-        homePage.typeInEmailAddressRegisterCustomerField("1mihai@test.com"); //Change The E-mail If The Test Fails
-        homePage.typeInPasswordRegisterCustomerField("12345");
+        homePage.typeInEmailAddressRegisterCustomerField("amira.nicolas@hotmail.com"); //Change The E-mail If The Test Fails
+        homePage.typeInPasswordRegisterCustomerField("1234");
         homePage.clickOnLoginRegisterCustomerButton();
 
         homePage.clickOnAllCategoriesDropDownList();

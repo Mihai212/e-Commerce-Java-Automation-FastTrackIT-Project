@@ -1,3 +1,5 @@
+package TestCases;
+
 import Pages.BasePage;
 import Pages.RegisterAccountPage;
 import jdk.jfr.Description;

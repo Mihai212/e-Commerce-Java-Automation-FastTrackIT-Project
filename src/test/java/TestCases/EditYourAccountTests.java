@@ -1,3 +1,5 @@
+package TestCases;
+
 import Pages.BasePage;
 import Pages.EditYourAccountPage;
 import jdk.jfr.Description;
@@ -24,11 +26,11 @@ public class EditYourAccountTests extends BasePage {
         editYourAccountPage.moveCursorArrowToMyAccountButton();
         editYourAccountPage.clickOnMyAccountLoginButton();
 
-        editYourAccountPage.typeInEmailAddressRegisterCustomerField("1mihai@test.com");
+        editYourAccountPage.typeInEmailAddressRegisterCustomerField("keith.volkman@yahoo.com");
         editYourAccountPage.typeInPasswordRegisterCustomerField("1234");
         editYourAccountPage.clickOnForgottenPasswordButtonFromReturningCustomer();
 
-        editYourAccountPage.typeInYourEmailAddressFieldFromForgottenPassword("1mihai@test.com");
+        editYourAccountPage.typeInYourEmailAddressFieldFromForgottenPassword("2mihai@test.com");
         editYourAccountPage.clickOnContinueButtonFromForgottenPassword();
 
         String actualResult = driver.findElement(By.cssSelector("[class=\"alert alert-success alert-dismissible\"]")).getText();
@@ -41,8 +43,8 @@ public class EditYourAccountTests extends BasePage {
         editYourAccountPage.moveCursorArrowToMyAccountButton();
         editYourAccountPage.clickOnMyAccountLoginButton();
 
-        editYourAccountPage.typeInEmailAddressRegisterCustomerField("1mihai@test.com");
-        editYourAccountPage.typeInPasswordRegisterCustomerField("1234");
+        editYourAccountPage.typeInEmailAddressRegisterCustomerField("2mihai@test.com");
+        editYourAccountPage.typeInPasswordRegisterCustomerField("12345");
 
         editYourAccountPage.clickOnLoginReturningCustomerButton();
 
@@ -56,8 +58,8 @@ public class EditYourAccountTests extends BasePage {
         editYourAccountPage.moveCursorArrowToMyAccountButton();
         editYourAccountPage.clickOnMyAccountLoginButton();
 
-        editYourAccountPage.typeInEmailAddressRegisterCustomerField("1mihai@test.com");
-        editYourAccountPage.typeInPasswordRegisterCustomerField("12345");
+        editYourAccountPage.typeInEmailAddressRegisterCustomerField("keith.volkman@yahoo.com");
+        editYourAccountPage.typeInPasswordRegisterCustomerField("1234");
         editYourAccountPage.clickOnLoginReturningCustomerButton();
 
         editYourAccountPage.clickOnEditYourAccountInfo();
@@ -69,7 +71,7 @@ public class EditYourAccountTests extends BasePage {
         editYourAccountPage.enterInTheLastNameFieldFromMyAccountInfo("Cristian-Mihai");
 
         editYourAccountPage.deleteAllCharactersFromTheEmailFieldFromMyAccountInfo();
-        editYourAccountPage.enterInEmailFieldFromTheEmailFieldFromMyAccountInfo("mihai10@test.com");
+        editYourAccountPage.enterInEmailFieldFromTheEmailFieldFromMyAccountInfo("3mihai@test.com");
 
         editYourAccountPage.deleteAllCharactersFromTheTelephoneFieldFromMyAccountInfo();
         editYourAccountPage.enterInTelephoneFieldFromTheEmailFieldFromMyAccountInfo("999972984");
@@ -78,7 +80,7 @@ public class EditYourAccountTests extends BasePage {
 
         editYourAccountPage.clickOnEditYourAccountInfo();
         editYourAccountPage.deleteAllCharactersFromTheEmailFieldFromMyAccountInfo(); //I Did This Action For Maintaining The Email Pass
-        editYourAccountPage.enterInEmailFieldFromTheEmailFieldFromMyAccountInfo("1mihai@test.com"); //I Did This Action For Maintaining The Email Pass
+        editYourAccountPage.enterInEmailFieldFromTheEmailFieldFromMyAccountInfo("keith.volkman@yahoo.com"); //I Did This Action For Maintaining The Email Pass
 
         editYourAccountPage.clickEditContinueButtonFromMyAccountInfo();
 
@@ -93,18 +95,18 @@ public class EditYourAccountTests extends BasePage {
         editYourAccountPage.moveCursorArrowToMyAccountButton();
         editYourAccountPage.clickOnMyAccountLoginButton();
 
-        editYourAccountPage.typeInEmailAddressRegisterCustomerField("1mihai@test.com");
-        editYourAccountPage.typeInPasswordRegisterCustomerField("12345");
+        editYourAccountPage.typeInEmailAddressRegisterCustomerField("keith.volkman@yahoo.com");
+        editYourAccountPage.typeInPasswordRegisterCustomerField("1234");
         editYourAccountPage.clickOnLoginReturningCustomerButton();
 
         editYourAccountPage.clickChangeYourPassword();
-        editYourAccountPage.typeInChangePasswordField("1234");
-        editYourAccountPage.typeInConfirmPasswordField("1234");
+        editYourAccountPage.typeInChangePasswordField("12345");
+        editYourAccountPage.typeInConfirmPasswordField("12345");
         editYourAccountPage.clickContinueChangePasswordButton();
 
         editYourAccountPage.clickChangeYourPassword();
-        editYourAccountPage.typeInChangePasswordField("12345"); //I Did This Action For Maintaining The First Pass
-        editYourAccountPage.typeInConfirmPasswordField("12345");//I Did This Action For Maintaining The First Pass
+        editYourAccountPage.typeInChangePasswordField("1234"); //I Did This Action For Maintaining The First Pass
+        editYourAccountPage.typeInConfirmPasswordField("1234");//I Did This Action For Maintaining The First Pass
         editYourAccountPage.clickContinueChangePasswordButton();
 
         String actualResult = driver.findElement(By.cssSelector("[class=\"alert alert-success alert-dismissible\"]")).getText();
@@ -118,8 +120,8 @@ public class EditYourAccountTests extends BasePage {
         editYourAccountPage.moveCursorArrowToMyAccountButton();
         editYourAccountPage.clickOnMyAccountLoginButton();
 
-        editYourAccountPage.typeInEmailAddressRegisterCustomerField("1mihai@test.com"); //Change The E-mail If The Test Fails With The Changed One
-        editYourAccountPage.typeInPasswordRegisterCustomerField("12345"); //Change The Password If The Test Fails With The Changed One
+        editYourAccountPage.typeInEmailAddressRegisterCustomerField("keith.volkman@yahoo.com"); //Change The E-mail If The Test Fails With The Changed One
+        editYourAccountPage.typeInPasswordRegisterCustomerField("1234"); //Change The Password If The Test Fails With The Changed One
         editYourAccountPage.clickOnLoginReturningCustomerButton();
         editYourAccountPage.clickOnEditYourAccountInfo();
 

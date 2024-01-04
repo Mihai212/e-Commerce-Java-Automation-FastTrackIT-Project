@@ -1,3 +1,5 @@
+package TestCases;
+
 import Pages.BasePage;
 import Pages.BlogArticlePage;
 import jdk.jfr.Description;
