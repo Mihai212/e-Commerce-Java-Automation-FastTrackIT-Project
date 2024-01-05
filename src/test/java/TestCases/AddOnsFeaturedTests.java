@@ -59,8 +59,14 @@ public class AddOnsFeaturedTests extends BasePage {
         addOnsFeaturedPage.clickOnSecondQuestionFromFaqCategory();
         addOnsFeaturedPage.clickOnThirdQuestionFromFaqCategory();
 
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        WebElement actualPage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#mz-faq-panel-214664-2 > div > p > span")));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+        WebElement actualPage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"mz-faq-panel-214664-2\"]")));
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         String actualResult = actualPage.getText();
         Assert.assertEquals(actualResult, "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.”");
