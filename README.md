@@ -1,4 +1,4 @@
-This is my final project for the exam.
+This is my final project for the "FastTrackIT" final exam.
 
 It was made on a dummy site for testing.
 
