@@ -1,4 +1,4 @@
-## ▶️YouTube Live Links for Project:
+## ▶️YouTube Links for Project:
 
 •[Java Code View Project](https://youtu.be/sjaOoUjgtrQ);<br>
 •[Java Tests Running And Results](https://youtu.be/I1rXYuoQg3k);
